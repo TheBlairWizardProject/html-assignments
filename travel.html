@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "travel.css">
+        <title>Travel </title>
+        <style> 
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        .maincontainer{
+            display:grid;
+            grid-template-columns:50% auto;
+      
+            margin:0 2em 10px 4em;
+        }
+
+        h3,h4,h5{
+            text-align:center;
+    
+
+        
+        }
+        body{
+            font-family:Arial;
+            
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        nav li{
+            display: inline;
+            padding: 0.1em;
+            margin: 10px;
+        }
+        .border{ 
+            border-top:1px solid #f3714a;
+        }
+        h1{
+  
+
+            color: black;
+     
+        }
+
+        .credits h5 {
+
+        }
+        .gridgallery {
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content:center;
+            border-top:1px solid #f3714a;
+        }
+        .paragraph {
+            grid-column:1/span2;
+            margin:10px 0;
+        }
+
+        .card{
+            border:1px solid black;
+            margin:3px;
+        }
+        .title{
+            font-family: Arial;
+            text-align:center;
+
+        }
+        .vacation{
+            grid-column:1 / span 2;
+            grid-row:2;
+
+        }
+        .credits{
+            border-top:1px solid #f3714a;
+            grid-column:1/ span 2;
+            grid-row:3;
+        }
+        .q1{
+            text-align:left;
+            border-top:1px solid #f3714a;
+
+        }
+        .qscontainer{
+            margin-left:30px;
+        }
+        .destinations{
+       
+        }
+        .firstnum li {
+            line-height:1em;
+        }
+        .credits p {
+            font-size:15px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="item"><a href = "#">About Us</a></li>
+                <li class="item"><a href = "#">Photos</a></li>
+                <li class="item"><a href = "#">Destinations</a></li>
+                <li class="item"><a href = "#">Resources</a></li>
+                <li class="item"><a href = "#">Events</a></li>
+            </ul>
+        </nav>
+    
+            <div class ="maincontainer">
+                <div id ="gallery">
+                    <h3><span class="title">Gallery</span></h3>
+                    
+                    <div class="gridgallery">
+                        <div class = "card">
+                            <img src="images/travel150/italy2_tn.jpg" alt = "Itality mountains near cliffs">
+                        </div>
+                        <div class = "card">
+                            <img src="images/travel150/japan_tn.jpg" alt = "Japan town near dusk">
+                        </div>
+                        <div class = "card">
+                            <img src="images/travel150/sanfrancisco_tn.jpg" alt = "San Francisco Golden Gate Bridge">
+                        </div>
+                        <div class = "card">
+                            <img src="images/travel150/venice2_tn.jpg" alt = "Venice Canels showing water">
+                        </div>
+                        <div class = "card">
+                            <img src="images/travel150/machupicchu_tn.jpg" alt = "machupicchu folliage covered cliffs">
+                        </div>
+                        <div class = "card">
+                            <img src="images/travel150/toronto_tn.jpg" alt = "Toronto cityscape at dawn">
+                        </div>
+                    </div>
+                </div>
+                <div class ="qscontainer">
+                    <h3><span class="title">Questions</span></h3>
+                    <div class = "q1">
+                        <ol class="firstnum">
+                            <li>What is the difference between a class and an id?</li>
+                            <p> &#9675; A class is used in multiple places, an id is used in one.</p>
+                            <li>What is the CSS property that could be used to replace a bullet symbol with an image?</li>
+                            <p>&#9675; It would be list-style-image: url('img/bullet.png'); Or Unicode '&#9675' </p>
+                            <li>What is the difference between padding and margin? </li>
+                            <p>&#9675; Padding is used when you want to inherent properties like background color and extend the space of an element, Margin extends the space with whitespace </p>
+                            <li>What is the fr unit of measurement? How would you use it to specify 2 grid columns that have width of 25% and 75%?</li>
+                            <p>&#9675; grid-template-columns: 75% 25% (Fuck this list & questions this ruined my entire midterm) </p>                        
+                        </ol>
+                    </div>
+                </div>
+                <div class ="vacation">
+                    <h3><span class="title">Vacation</span></h3>
+                    <div class="border">
+
+                        <div class="paragraph">A vacation, or holiday, is a leave of absence from a regular occupation, or a specific trip or journey, usually for the purpose of recreation or tourism. People often take a vacation during specific holiday observances, or for specific festivals or celebrations. Vacations are often spent with friends or family.</div>
+                        <div class="paragraph">
+                        A person may take a longer break from work, such as a sabbatical, gap year, or career break.
+                        </div>
+                        <div class="paragraph">    
+                            
+                        The concept of taking a vacation is a recent invention, and has developed through the last two centuries. Historically, the idea of travel for recreation was a luxury that only wealthy people could afford (see Grand Tour). In the Puritan culture of early America, taking a break from work for reasons other than weekly observance of the Sabbath was frowned upon. However, the modern concept of vacation was led by a later religious movement encouraging spiritual retreat and recreation. The notion of breaking from work periodically took root among the middle and working class.
+                        </div>
+                    </div>
+                </div>
+                <div class="credits">
+                    <h5><span class="title">Credits</span></h5>
+                    <p>
+                        Text content was obtained from appropriate Wikipedia pages. Images were obtained from unsplash.com, social media buttons were generated at iconmonstr.com and logos were created at logomaker.com. License agreements for images do not require citation for non-profit use.
+                    </p>
+                </div>
+            </div>
+
+        
+        <footer>
+           
+            
+                <div class = "socialmedia">
+                    <a href="www.facebook.com"><img src="images/socialmedia/facebook32.png" alt="facebook"></a>
+                    <a href="www.twitter.com"><img src="images/socialmedia/twitter32.png" alt="twitter"></a>
+                    <a href="www.instagram.com"><img src="images/socialmedia/instagram32.png" alt="instagram"></a>
+                    <a href="mailto:travel@example.com"><img src="images/socialmedia/emailat32.png" alt="email"></a>
+                </div>
+                    
+                <div class="logo">
+                    <img src="images/logos/travel_vertical.png" alt="logo">
+                </div>
+                <div class ="tower">
+                    <img src = "images/logos/paris2_lg.jpg" alt="tower">
+                </div>
+                
+                <div class="destinations">
+                    <h4> Destinations </h4>
+                    <div class="contentfoot">
+                        
+                            Asia<br>
+                            Austrailia<br>
+                            Europe<br>
+                            North America<br>
+                            South America<br>
+                
+                    </div>
+                </div>
+                <div class="aboutus">
+                    <h4> About Us </h4>
+                    <div class="contentfoot">
+                        
+                            Who we are<br>
+                            What we do<br>
+                
+                    </div>
+                </div>
+                <div class="resources">
+                    <h4> Resources </h4>
+                    <div class="contentfoot">
+                        
+                            TripAdvisor<br>
+                            Wikipedia<br>
+                
+                    </div>
+                </div>
+                <div class="photos">
+                    <h4> Photos </h4>
+                    <div class="contentfoot">
+                        
+                            Gallery<br>
+                            Submit a Photo<br>
+                
+                    </div>
+                </div>
+                <div class="events">
+                    <h4> Events </h4>
+                    <div class="contentfoot">
+                        
+                            Meetup Groups<br>
+                            Trips<br>
+                
+                    </div>
+                </div>
+                <div class= "topof">
+                    <a href="travel.html">Go to top of Page</a>
+                </div>
+        </footer>
+    </body>
+</html

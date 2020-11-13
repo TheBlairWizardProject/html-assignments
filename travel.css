@@ -1,0 +1,119 @@
+
+/* Contains styling for universally used parts of website */
+
+
+nav {   
+    /*line-height:1.5em;*/
+    top:0;
+    position:sticky;
+    color: #f3714a;
+  
+}
+
+nav ul { /* this is for the nav ul styles, no grid items */
+    background-color:#035781;;
+    padding: 15px;
+ 
+}
+
+nav ul li { /* this is for the nav li styles, no grid items */
+    text-decoration: none;
+    list-style-type: none;
+    
+    margin: 0 .2em;
+    
+
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #f3714a;
+    background-color:white;
+    padding: 0.4em 0.7em;
+
+}
+nav a:hover{
+    color: #003557;
+    background-color:white;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 32px 35% auto auto;    
+    border-top: 3px solid #003557; 
+    padding:20px;
+    grid-row-gap:10px;
+    grid-column-gap:20px;
+}
+#footerjustify{
+    justify-content:center;
+}
+.socialmedia {
+    grid-column:1;
+}
+.destinations {
+    margin-left:20px;
+    grid-column:2;
+    background-color: #d9e1e9;
+    padding: 10px;
+
+    margin-bottom:30px;
+}
+.aboutus {
+
+    grid-column:3;
+    background-color: #d9e1e9;
+    padding: 10px;
+    
+}
+.resources {
+    grid-column:4;
+    background-color: #d9e1e9;
+    padding: 10px;
+}
+.photos {
+    grid-column:3;
+    grid-row:3;
+    background-color: #d9e1e9;
+    padding: 10px;
+}
+.events {
+    
+    grid-column:4;
+    grid-row:3;
+    background-color: #d9e1e9;
+    padding: 10px;
+}
+.events h4, .photos h4, .resources h4, .aboutus h4, .destinations h4 {
+    text-align:left;
+}
+.contentfoot {
+    border-top:1px solid #f3714a;
+
+}
+.logo {
+    grid-column:2;
+    justify-self:center;
+    
+}
+.tower {
+    grid-column:3 /span 2;
+    justify-self:center;
+}
+.topof{
+    background-color: #d9e1e9;
+    text-align:center;
+    grid-column:1 /span 4;
+    grid-row:4;
+}
+.topof a{
+    color:#f3714a;
+    background-color: #d9e1e9;
+    text-decoration:none;
+    
+}
+.topof a:hover{
+    color:#003557;
+    background-color: #d9e1e9;
+    text-decoration:underline;
+}
