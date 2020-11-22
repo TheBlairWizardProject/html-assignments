@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   <!--
+      Lab #5
+
+   -->
+    <meta charset="UTF-8" />
+    <title>OutdoorAdventures</title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="printstyles.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+           top:5px;
+           margin-bottom:30px;
+           text-align:center;
+           background-color:#E9EFFF;
+        }
+        #main {
+           margin:10px 10%;
+         
+        }
+       /*                       table css below here                   */
+        table#legend {
+           border:none;
+        }
+        table#legend caption {
+           caption-side:top;
+           text-align:left;
+        }
+        table#legend .yella, .mold, .kush, .purp {
+           padding:5px;
+        }
+        table#schedule{
+           width:100%;
+           margin-top:1em;
+           border-collapse:collapse;
+           font-size:0.8em;
+        }
+        table#schedule td, th {
+           border:1px solid black;
+        }
+        table#schedule thead {
+           background-color:#002759;
+           color:white;
+        }
+        table#schedule thead tr{
+           height:50px;
+        }
+        table#schedule tbody tr{
+           height:40px;
+        }
+
+        table#schedule tbody tr th:first-child {
+           background-color:#DDEEFF;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-size: 1em;
+            text-align:right;
+        }
+        table#schedule .daycol {
+            vertical-align:center;
+            padding:5px;
+   
+            width:5%;
+        }
+        table#schedule .timecols {
+           vertical-align:center;
+           padding:5px 8px;
+           width:7%;
+        }
+        .tableimg {
+           background-image: url("images/dust.jpg");
+           text-align:center;
+           font-weight:bold;
+        }
+       
+       /*                    table format css end here                */
+        .mold {
+            background-color:#00A5D6;
+        }
+        .purp {
+           background-color:#9262af;
+        }
+        .kush {
+           background-color:#99EE8a;
+        }
+        .yella {
+           background-color:#F9F871;
+        }
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Outdoor Adventure Seminars</br>
+            2020/2021</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="item"><a href="#">About Us</a></li>
+                    <li class="item"><a href="#">Travel</a></li>
+                    <li class="item"><a href="#">Photos</a></li>
+                    <li class="item"><a href="#">Shop</a></li>
+                    <li class="item"><a href="#">Reviews</a></li>
+                    <li class="item"><a href="#">Seminars</a></li>
+                    <li class="item"><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main"><!-- table goes here -->
+            <table id="legend"
+                summary = "contains the information for the legend table.">
+                <caption>Legend:</caption>
+
+                    <tr>
+                        <td class="purp"> </td>
+                        <td> Beginner Cycling </td>
+                        <td class="mold"> </td>
+                        <td>Long Distance Cycling </td>
+                        <td class="kush"> </td>
+                        <td>Hiking </td>
+                        <td class="yella"> </td>
+                        <td>Camping </td>
+                    </tr>
+
+            </table>
+            
+            <table id="schedule"
+                summary ="This table contains the itinerary schedule information
+                for the Outdoor Adventures Seminars for the 2020/2021 period.">
+                <caption>
+                   Schedule subject to change
+                </caption>
+                <colgroup>
+                    <col class ="daycol"><!--assigning class to style day column specific width-->
+                    <col span = "7" class = "timecols">
+                    <!--this assigns timing columns to be set width-->
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>7 am - 9 am</th>
+                        <th>9 am - 11 am</th>
+                        <th>11 am - 12 pm</th>
+                        <th>12 pm - 2 pm</th>
+                        <th>2 pm - 4 pm</th>
+                        <th>6 pm - 8 pm</th>
+                        <th>8 pm - 10 pm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <td colspan="7" class="tableimg">Reserved for groups</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td class="kush">Hiking</td>
+                        <td class="purp">Beginner Cycling</td>
+                        <td colspan="5" class="yella">Camping</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td rowspan="2" class="mold">Long Distance Cycling Part 1 </td>
+                        <td class="blank"> </td>
+                        <td class="purp">Beginner Cycling</td>
+                        <td rowspan="2" class="yella">Camping in Asia</td>
+                        <td colspan="2" rowspan="3" class="kush">Hiking</td>
+                        <td rowspan="2" class="mold">Long Distance Cycling Part 2</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td class="yella">Camping</td>
+                        <td class="blank"> </td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td rowspan="4" class="yella">Camping in Europe</td>
+                        <td colspan="2" class="purp">Beginner Cycling</td>
+                        <td class="blank"> </td>
+                        <td class="blank"> </td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td colspan="3" rowspan="2" class="kush">Hiking</td>
+                        <td class="purp">Beginner Cycling</td>
+                        <td rowspan="2" colspan="3" class="mold">Long Distance Cycling Part 1 and 2</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td class="blank"> </td>
+                    </tr>
+                    <tr>
+                        <th>Holidays</th>
+                        <td class="mold" colspan="2">Long Distance Cycling</td>
+                        <td class="tableimg" colspan="4">No Seminars</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
