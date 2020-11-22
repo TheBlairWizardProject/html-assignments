@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@media (max-width: 599px) {
+    
+    .menu{   
+        padding:0;
+        margin:0;
+    }
+    nav { 
+        margin-right:30px;
+    }
+    li a{ /* still need to remove or find way to decrease spacing, the bottom and top seem be to touching instead of overlapping - gives appearance of thicker border on bottom */
+        display:block;
+        text-decoration: none;
+        margin-left:5px;
+        color:white;
+        background-color: #a8aabc;
+        padding:5px 35px;
+        line-height:2em;
+        width:90%;
+        border-radius: 0 10px 0 0;
+        border-top:2px solid black;
+        border-right:2px solid black;
+        border-left:2px solid black;
+        text-align:center; 
+        
+
+        
+    }
+    nav li{
+        
+        list-style-type:none;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .menu{  /* This is used as part of nav */
+        display: flex;/*shrinks nav based on screen size to a point*/
+        /*nowrap property makes so nav items will not go to a new row when screen-size reduced less than nav width */
+        flex-wrap:nowrap;/*nowrap property makes so nav items will not go to a new row when screen-size reduced less than nav width */
+        justify-content:center; /* property space-evenly does as expected, within the space available*/  
+    }
+    nav a{
+        text-decoration: none;
+        padding:1.4em 1.7em;
+        border: 1px solid black;
+        color:white;
+        background-color: #a8aabc;
+        padding:10px 15px;
+        border-radius: 0 10px 0 0;
+        border-top:2px solid black;
+        border-right:2px solid black;
+        border-left:2px solid black;
+        line-height:2em;
+    }
+    nav li{
+        margin:0 3px;
+        list-style-type:none;
+    }
+
+}
+@media (min-width: 900px) {
+    .menu{  /* This is used as part of nav */
+        display: flex;/*shrinks nav based on screen size to a point*/
+        flex-wrap:nowrap;/*nowrap property makes so nav items will not go to a new row when screen-size reduced less than nav width */
+        justify-content:space-between; /* property space-evenly does as expected, within the space available*/  
+        margin:10px;
+    }
+    nav a{
+        text-decoration: none;
+        padding:1.3em 1.7em;
+
+        color:white;
+        background-color: #a8aabc;
+        border-radius: 0 10px 0 0;
+        border-top:2px solid black;
+        border-right:2px solid black;
+        border-left:2px solid black;
+        line-height:2em;
+    }
+    nav li{
+
+        list-style-type:none;
+    }
+    
+    
+
+}
+    
+
