@@ -1,0 +1,28 @@
+/* printstyles.css */
+
+/* Statement of authorship, I certify that my work is my own and no one
+has copied from it - 000223441 | Michael Blair */
+
+/* prints the styles in black font, background color default (white) */
+
+@media print {
+    html {
+        margin: 0;
+        color: #000;
+        background-color:none;
+
+        }
+        
+    }
+    h1{
+        font-style:none;
+        
+    }
+
+    body {
+      margin: 0;
+      color: #000;
+      
+    }
+    
+}
